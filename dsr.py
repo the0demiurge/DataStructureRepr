@@ -7,7 +7,7 @@ class BinaryTreeNode(object):
         self.left, self.right = left, right
         self.value = value
 
-    @recursive_repr(fillvalue='root')
+    @recursive_repr(fillvalue='...')
     def __repr__(self):
         result = list()
 
