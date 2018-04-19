@@ -9,12 +9,14 @@ class BinaryTreeNode(object):
 
     @recursive_repr(fillvalue='...')
     def __repr__(self):
-        result = list()
+        if self.left is self.right is None:
+            return '(' + repr(self.value) + ')'
 
+        result = list()
         repr_left, repr_right = map(
             lambda x: repr(x).split('\n') if x is not None else list(),
             (self.left, self.right))
-        repr_self = repr(self.value)
+        repr_self = '(' + repr(self.value) + ')'
 
         len_left, len_right = map(
             lambda x: len(x[0]) if len(x) > 0 else 0,
