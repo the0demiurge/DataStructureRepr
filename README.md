@@ -2,8 +2,13 @@
 
 I opened this project to show datastructures by hacking `__repr__` function of Python.
 
-# Example
+## Installation
 
+`pip install dsr`
+
+## Example
+
+`from dsr import BinaryTreeNode, TreeNode`
 
 ```python
 print('BinaryTreeNode:')
