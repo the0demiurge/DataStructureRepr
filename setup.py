@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from setuptools import setup
+import setuptools
 
 
 readme = '\n'.join(open('README.md').readlines())
 
-setup(
+setuptools.setup(
     name='dsr',
-    version='1.0.0',
+    version='1.0.1',
 
     # Project description
     description='Automatically gegerate repr to show data structures espelly trees',
@@ -33,4 +33,5 @@ setup(
         "Operating System :: POSIX",
         "Operating System :: Unix",
     ],
+    packages=["dsr"],
 )
