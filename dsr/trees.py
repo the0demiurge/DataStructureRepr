@@ -27,8 +27,8 @@ class BinaryTreeNode(object):
             (repr_left, repr_right, repr_self))
 
         diff_height = height_left - height_right
-        left_bar = ' ' if self.left is None else '🡗'
-        right_bar = ' ' if self.right is None else '🡖'
+        left_bar = ' ' if self.left is None else '↙'
+        right_bar = ' ' if self.right is None else '↘'
 
         if diff_height > 0:
             repr_right.extend([' ' * len_right] * diff_height)
