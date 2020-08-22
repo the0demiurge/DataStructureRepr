@@ -2,6 +2,7 @@ from reprlib import recursive_repr
 
 
 class BinaryTreeNode(object):
+    __slots__ = ('value', 'left', 'right')
 
     def __init__(self, value=None, left=None, right=None):
         self.left, self.right = left, right

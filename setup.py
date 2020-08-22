@@ -7,7 +7,7 @@ readme = '\n'.join(open('README.md').readlines())
 
 setuptools.setup(
     name='dsr',
-    version='1.0.3',
+    version='1.0.4',
 
     # Project description
     description='Automatically gegerate repr to show data structures espelly trees',
